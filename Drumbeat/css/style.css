@@ -1,0 +1,62 @@
+/* GENERAL */
+#clear {
+    /* Elements div que servixen per a parar el float */
+    clear:both;
+}
+
+/* HEADER */
+header {
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+header img {
+    height: 110px;
+}
+
+header nav {
+    float: right;
+}
+
+header button {
+    border: none;
+}
+
+#userAdmin {
+    height: 33px;
+}
+
+#userAdmin button {
+    background-color: inherit;
+    margin-top: 5px;
+    font-size: large;
+}
+
+#headerNav {
+    height: 77px;
+    clear: right;
+}
+
+#headerNav button {
+    margin-top: 19px;
+    margin-bottom: 19px;
+    height: 39px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: x-large;
+}
+/* MAIN */
+main {
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+#mainNav button {
+    float: left;
+}
+
+#language {
+    float: right;
+}
+
+/* FOOTER */
