@@ -51,6 +51,8 @@ main {
     margin-left: 15%;
 }
 
+/* Main header */
+
 #mainNav button {
     float: left;
 }
@@ -59,4 +61,21 @@ main {
     float: right;
 }
 
+#language div {
+    display: inline-block;
+}
+
+/* Main main */
+#mainMain {
+    clear: both;
+    width: 60%;
+    float: left;
+}
+
+
+/*  */
+
 /* FOOTER */
+footer {
+    clear: both;
+}
