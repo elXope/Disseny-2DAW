@@ -1,0 +1,34 @@
+.header {
+    /* En qualsevol moment, l'alçada de l'element serà el 95% de l'alçada del viewport */
+    height: 95vh;
+    background-image:
+        linear-gradient(to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
+        url("../img/hero.jpg");
+    background-size: cover;
+    /* Assegurem que el top de la image se manté al top del container: */
+    background-position: top;
+    /* Amb clip-path posem els llocs on la imatge serà visible */
+    clip-path: polygon(0 0, 100% 0, 100% 74vh, 0 100%);
+
+    position: relative;
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 3.5rem;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
