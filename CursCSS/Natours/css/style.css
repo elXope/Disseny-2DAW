@@ -9,11 +9,13 @@ Dark green: #28b485
 
 /*reset cross-browser (no longer necessary) */
 /* Fem reset normal */
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    /* Canvia el model de caixa per a que els borders i paddings no s'afigen al total width/height */
-    box-sizing: border-box;
+    /* Intentem usar el inherit tot lo que puguem. Per això la definició de caixa està en body. Better practice */
+    box-sizing: inherit;
 }
 
 html {
@@ -31,6 +33,9 @@ body {
     line-height: 1.7;
     color: #777;
     padding: 3rem;
+
+    /* Canvia el model de caixa per a que els borders i paddings no s'afigen al total width/height */
+    box-sizing: border-box;
 }
 
 .header {
@@ -50,17 +55,17 @@ body {
     position: relative;
 }
 
-.logo-box {
+.header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
 }
 
-.logo {
+.header__logo {
     height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -78,7 +83,7 @@ body {
     margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
@@ -95,7 +100,7 @@ body {
     */
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -175,7 +180,7 @@ body {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
 
-.btn-white {
+.btn--white {
     background-color: #fff;
     color: #777;
 }
@@ -195,7 +200,7 @@ body {
     transition: all .4s;
 }
 
-.btn-white::after {
+.btn--white::after {
     background-color: #fff;
 }
 
@@ -204,7 +209,7 @@ body {
     opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
 }
