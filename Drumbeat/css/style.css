@@ -405,7 +405,68 @@ background: linear-gradient(0deg, rgba(255,250,199,1) 96%, rgba(255,255,255,1) 1
 
 /* FOOTER */
 footer {
+    clear: both;
     padding-left: 15%;
     padding-right: 15%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: gray;
+    color: white;
+    height: 150px;
+}
+
+#footerMain {
+    width: 60%;
+    float: left;
+}
+
+#footerMain div {
+    width: 25%;
+    float: left;
+}
+
+#footerMain p {
+    padding-left: 20px;
+    line-height: 20px;
+}
+
+#footerMain div:nth-child(1) p:nth-child(1) {
+    background-image: url("../img/rss.png");
+    background-repeat: no-repeat;
+    background-size: 10%;
+}
+
+#footerMain div:nth-child(2) p:nth-child(1) {
+    background-image: url("../img/twitter.png");
+    background-repeat: no-repeat;
+    background-size: 8%;
+}
+
+#footerMain div:nth-child(2) p:nth-child(2) {
+    background-image: url("../img/facebook_p.png");
+    background-repeat: no-repeat;
+    background-size: 8%;
+}
+
+#footerMain div:nth-child(2) p:nth-child(3) {
+    background-image: url("../img/flicker.png");
+    background-repeat: no-repeat;
+    background-size: 8%;
+}
+
+#footerMain div:nth-child(4) p:nth-child(1) {
+    background-image: url("../img/mozilla_foundation_logo.png");
+    background-repeat: no-repeat;
+    background-size: 10%;
+}
+
+#footerAside {
+    width: 35%;
+    float: right;
+    text-align: right;
+    color: rgb(79, 79, 79);
+}
+
+#footerAside span{
+    color: white;
 }
