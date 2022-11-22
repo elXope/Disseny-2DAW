@@ -165,8 +165,74 @@ body {
 }
 
 .whatabout__box {
-    padding: 1rem;
-    background-color: rgb(189, 187, 187);
+    padding: 1.5rem;
+    background-color: rgb(221, 221, 221);
+    border-radius: 2rem;
 }
 
+.whatabout__paragraph--box {
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+
+#gentola {
+    background-image: url("../img/benefit_p2pu.png");
+}
+
+#motxilla {
+    background-image: url("../img/benefit_creds.png");
+}
+
+#furgo {
+    background-image: url("../img/benefit_hackbus.png");
+}
+
+#arbre {
+    background-image: url("../img/benefit_teaching.png");
+}
+
+#cervell {
+    background-image: url("../img/benefit_hack.png");
+}
+
+#puzzle {
+    background-image: url("../img/benefit_wikipedia.png");
+}
+
+.postit__list {
+    list-style-image: url("../img/check.png");
+    margin-left: 3rem;
+}
+
+.btns-aside {
+    text-align: right;
+}
+
+.btns-aside__btn {
+    font-size: large;
+    color: white;
+    text-shadow: 0 1px 2px black;
+    box-shadow:
+        0px -0.1px 5.4px rgba(0, 0, 0, 0.099),
+        0px 2px 10px rgba(0, 0, 0, 0.17);
+    
+    margin-bottom: 1rem;
+    width: 25rem;
+    margin-right: 2rem;
+    background-repeat: no-repeat;
+}
+
+#identica {
+    background-color: rgb(81, 127, 187);
+    background-image: url("../img/identica.png");
+}
+
+#twitter {
+    background-color: rgb(0, 195, 255);
+    background-image: url("../img/twitter.png");
+}
 
