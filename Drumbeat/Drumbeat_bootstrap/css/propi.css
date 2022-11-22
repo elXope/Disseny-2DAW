@@ -1,0 +1,238 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+.header__access {
+    float: right;
+    margin-top: 1rem;
+}
+
+.header__accessItem {
+    color: black;
+    margin-left: 2rem;
+}
+
+.header__nav {
+    clear:both;
+    float: right;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.header__navItem {
+    float: right;
+    display: block;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 1rem;
+    font-size: x-large;
+    font-weight: 700;
+    color: gray;
+    border-radius: 1rem;
+    background-color: rgb(226, 226, 226);
+}
+
+    /* Truco per a llevar el float */
+.header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* MAIN */
+
+.main-header {
+    border-bottom: 1px solid gray;
+}
+
+.navItem {
+    border: 1px solid gray;
+    color: gray;
+    font-weight: 700;
+    background-color: rgb(226, 226, 226);
+    border-radius: 15px 15px 0% 0% / 15px 15px 0% 0%;
+}
+
+.language {
+    float: right;
+}
+
+.postit {
+    padding: 1.5rem;
+    margin: 2.5rem;
+    border-radius: .2rem;
+    box-shadow:
+        0px -.24rem .4rem rgba(0, 0, 0, 0.059),
+        0px -.03rem .54rem rgba(0, 0, 0, 0.085),
+        0px .38rem .68rem rgba(0, 0, 0, 0.111),
+        0px 1rem 1rem rgba(0, 0, 0, 0.17);
+}
+
+#postit__col1 article:nth-child(odd) {
+    background: rgb(255, 219, 255);
+    background: linear-gradient(0deg, rgba(255, 219, 255, 1) 90%, rgba(255, 255, 255, 1) 100%);
+}
+
+#postit__col1 article:nth-child(even) {
+    background: rgb(255, 248, 181);
+    background: linear-gradient(0deg, rgba(255, 248, 181, 1) 90%, rgba(255, 255, 255, 1) 100%);
+}
+
+#postit__col2 article:nth-child(odd) {
+    background: rgb(227, 255, 181);
+    background: linear-gradient(0deg, rgba(227, 255, 181, 1) 90%, rgba(255, 255, 255, 1) 100%);
+}
+
+#postit__col2 article:nth-child(even) {
+    background: rgb(181, 226, 255);
+    background: linear-gradient(0deg, rgba(181, 226, 255, 1) 90%, rgba(255, 255, 255, 1) 100%);
+}
+
+#postit__col1 article:nth-child(1) {
+    rotate: -2deg;
+}
+
+#postit__col1 article:nth-child(2) {
+    rotate: -2deg;
+}
+
+#postit__col1 article:nth-child(3) {
+    rotate: 4deg;
+}
+
+#postit__col1 article:nth-child(4) {
+    rotate: -2deg;
+}
+
+#postit__col1 article:nth-child(5) {
+    rotate: -2deg;
+}
+
+#postit__col2 article:nth-child(1) {
+    rotate: 2deg;
+}
+
+#postit__col2 article:nth-child(2) {
+    rotate: 2deg;
+}
+
+#postit__col2 article:nth-child(3) {
+    rotate: 2deg;
+}
+
+#postit__col2 article:nth-child(4) {
+    rotate: 2deg;
+}
+
+#postit__col2 article:nth-child(5) {
+    rotate: 2deg;
+}
+
+/* Main aside */
+.register {
+    background-color: rgb(149, 192, 255);
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    padding-bottom: .7rem;
+}
+
+.register__button {
+    border-style: inset;
+    margin-bottom: .7rem;
+    width: 80%;
+    font-size: xx-large;
+}
+
+.whatabout__paragraph {
+    font-style: italic;
+    color: gray;
+    font-weight: 700;
+}
+
+.whatabout__box {
+    padding: 1.5rem;
+    background-color: rgb(221, 221, 221);
+    border-radius: 2rem;
+}
+
+.whatabout__paragraph--box {
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+
+#gentola {
+    background-image: url("../img/benefit_p2pu.png");
+}
+
+#motxilla {
+    background-image: url("../img/benefit_creds.png");
+}
+
+#furgo {
+    background-image: url("../img/benefit_hackbus.png");
+}
+
+#arbre {
+    background-image: url("../img/benefit_teaching.png");
+}
+
+#cervell {
+    background-image: url("../img/benefit_hack.png");
+}
+
+#puzzle {
+    background-image: url("../img/benefit_wikipedia.png");
+}
+
+.postit__list {
+    list-style-image: url("../img/check.png");
+    margin-left: 3rem;
+}
+
+.btns-aside {
+    text-align: right;
+}
+
+.btns-aside__btn {
+    font-size: large;
+    color: white;
+    text-shadow: 0 1px 2px black;
+    box-shadow:
+        0px -0.1px 5.4px rgba(0, 0, 0, 0.099),
+        0px 2px 10px rgba(0, 0, 0, 0.17);
+    
+    margin-bottom: 1rem;
+    width: 25rem;
+    margin-right: 2rem;
+    background-repeat: no-repeat;
+}
+
+#identica {
+    background-color: rgb(81, 127, 187);
+    background-image: url("../img/identica.png");
+}
+
+#twitter {
+    background-color: rgb(0, 195, 255);
+    background-image: url("../img/twitter.png");
+}
+
