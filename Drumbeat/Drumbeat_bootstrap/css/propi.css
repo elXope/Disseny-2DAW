@@ -15,6 +15,10 @@ body {
 
 /* HEADER */
 
+.header {
+    margin-top: 2rem;
+}
+
 .header__access {
     float: right;
     margin-top: 1rem;
@@ -236,3 +240,41 @@ body {
     background-image: url("../img/twitter.png");
 }
 
+/* FOOTER */
+
+.footer {
+    background-color: gray;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.footer__link {
+    color: white;
+    padding-left: 2rem;
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+}
+
+#footer__rss {
+    background-image: url("../img/rss.png");
+}
+
+#footer__twitter {
+    background-image: url("../img/twitter.png");
+}
+
+#footer__facebook {
+    background-image: url("../img/facebook_p.png");
+}
+
+#footer__flickr {
+    background-image: url("../img/flicker.png");
+}
+
+#footer__mozilla {
+    background-image: url("../img/mozilla_foundation_logo.png");
+}
+
+.footer__paragraph {
+    text-align: right;
+}
