@@ -1,0 +1,37 @@
+#header {
+    float: left;
+    width: 100%;
+    background:#DAE0D2 url("bg.gif")
+      repeat-x bottom;
+    font-size: 93%;
+    line-height: normal;
+}
+
+#header ul {
+    margin:0;
+    padding:10px 10px 0;
+    list-style:none;
+}
+#header li {
+    float:left;
+    background:url("norm_right.gif")
+      no-repeat right top;
+    margin:0;
+    padding:0;
+}
+
+#header a {
+    display:block;
+    background:url("norm_left.gif")
+    no-repeat left top;
+    padding:5px 15px 4px;
+}
+
+#header #current {
+    background-image:url("norm_right_on.gif");
+}
+#header #current a {
+    background-image:url("norm_left_on.gif");
+    padding-bottom:5px;
+}
+
