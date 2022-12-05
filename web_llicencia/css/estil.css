@@ -1,0 +1,96 @@
+/*
+    Color principal: #264653
+    Color secundari: #2A9D8F
+    Color terciari 1: #E9C46A;
+    Color terciari 2: #F4A261;
+    Color terciari 3: #E76F51;
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* Intentem usar el inherit tot lo que puguem. Per això la definició de caixa està en body. Better practice */
+  box-sizing: inherit;
+}
+
+html {
+  /* Posem percentatge, assumint que el default del browser és 16px */
+  font-size: 62.5%;
+}
+
+body {
+  padding: 3rem;
+  /* Canvia el model de caixa per a que els borders i paddings no s'afigen al total width/height */
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  background-color: rgb(235, 235, 235);
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 6rem;
+    font-size: 2rem;
+}
+
+.header__titol {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(to bottom right, #264653, #2A9D8F);
+    background-clip: text;
+    color: transparent;
+    font-weight: 300;
+}
+
+main {
+    border: 1px solid #2A9D8F;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1rem 1rem #000;
+}
+
+.galeria {
+    padding: 1rem;
+}
+
+.galeria__titol {
+    display: inline-block;
+    background-image: linear-gradient(to bottom right, #264653, #2A9D8F);
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+.galeria__explicacio {
+    font-size: 1.6rem;
+}
+
+.galeria__obra {
+    width: 75%;
+    padding-top: 3rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.galeria__titol-individual {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 2rem;
+    background-image: linear-gradient(to bottom right, #264653, #2A9D8F);
+    background-clip: text;
+    color: transparent;    
+}
+
+.galeria__img {
+    width: 100%;
+}
+
+.footer {
+    background-image: linear-gradient(to bottom right, #264653, #2A9D8F);
+    padding: 1rem;
+}
